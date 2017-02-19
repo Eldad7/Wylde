@@ -1,0 +1,31 @@
+[{
+		"artist": "Metallica",
+		"songsNum": "5"
+	}, {
+		"artist": "Led Zeppelin",
+		"songsNum": "8"
+	}, {
+		"artist": "Iron Maiden",
+		"songsNum": "15"
+	}, {
+		"artist": "QOTSA",
+		"songsNum": "3"
+	}, {
+		"artist": "Arctic Monkeys",
+		"songsNum": "7"
+	}, {
+		"artist": "Incubus",
+		"songsNum": "8"
+	}, {
+		"artist": "Blink 182",
+		"songsNum": "12"
+	}, {
+		"artist": "Lamb of God",
+		"songsNum": "1"
+	}, {
+		"artist": "Slipknot",
+		"songsNum": "2"
+	}, {
+		"artist": "Korn",
+		"songsNum": "6"
+	}]

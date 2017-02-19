@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="includes/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <script src="includes/jquery-3.1.1.min.js"></script>
+    <script src="includes/menu.js"></script>
+    <srcipt src="includes/success.js"></srcipt>
+    <link rel="stylesheet" type="text/css" href="includes/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/slick/slick-theme.css"/>
+</head>
+<body>
+<div class="container">
+    <header>
+        <section id="headright">
+            <a href="#" id="profileName">Shlomi Ezra</a>
+            <a href="#" id="profilePic"><img src="images/users/yossit.png"></a>
+        </section>
+        <a href="index.html" id="logo"></a>
+    </header>
+
+    <main id="success">
+        <article>
+            <section>
+                <h1><span id="sectitle">WELL DONE!</span><br>YOU HAVE EDITED YOSSI'S GUITAR!</h1>
+                <section id="guitar_pic">
+                </section>
+                <div class="desc">
+                    <h3></h3>
+                    <a href="explore.php">
+                        <button>EXPLORE</button>
+                    </a>
+                    <a href="mailto: yossit@toshare.com&subject=Wylde - YOUR GUITAR IS BETTER!&body=Hey i just updated your guitar specs! check it out!">
+                        <button id="second_button">NOTIFY USER</button>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+</div>
+<script>
+    $("#guitar_pic").css("background", "url(" + sessionStorage.getItem("src") + ")");
+    $(".desc h3").text("TOTAL: " + sessionStorage.getItem("total"));
+</script>
+<footer>
+    <div class="container">
+        <a href="#"><span>CONTACT US</span></a>
+        <span>Copyright © 2017 Gady Ezra & Eldad Corem</span>
+    </div>
+</footer>
+</body>
+</html>

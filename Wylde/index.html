@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="includes/jquery-3.1.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="includes/menu.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <section id="headright">
+            <a href="#" id="profileName">Guest</a>
+            <a href="#" id="profilePic" class="guestpic"></a>
+        </section>
+        <a href="index.html" id="logo"></a>
+    </header>
+
+    <main id="main">
+        <article class="twothirdCol">
+            <h1>Get the right one for you...</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adip scingelit.
+                Etiam sed dignissim odio. Fusce eleifend viverra tellus,</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dignissim odio.Fusce eleifend viverra
+                tellus, a suscipit arcu sodales eu. Nullam semper eget ex et egestas. Quisque arcu augue, fringilla id
+                purus vel, pulvinar tempus urna. Sed auctor euismod placerat. Proin dictum gravida purus, at vehicula
+                felis faucibus eget. Sed sagittis vel massa quis congue.
+                Quisque gravida congue ipsum, id sodales mauris mattis sit amet.</p>
+            <form action="analysis.php" method="post">
+                <button type="submit" id="google">Sign in with Google</button>
+            </form>
+        </article>
+        <form action="manuallogin.php" method="post">
+            <article class="thirdCol">
+                <section id="loginbox">
+                    <h1>LOGIN</h1>
+                    <input id="email" name="email" type="text" placeholder="USERNAME">
+                    <input type="password" name="password" placeholder="PASSWORD">
+                    <button type="submit">GET ME IN</button>
+                </section>
+        </form>
+        </article>
+    </main>
+</div>
+<footer>
+    <div class="container">
+        <a href="#"><span>CONTACT US</span></a>
+        <span>Copyright © 2017 Gady Ezra & Eldad Corem</span>
+    </div>
+</footer>
+<script>
+    var array = document.getElementsByTagName("button");
+    for (var i = 0; i < array.length; i++)
+        array[i].addEventListener('click', putInStorage, false);
+    function putInStorage(e) {
+        sessionStorage.setItem('email', document.getElementById("email").value);
+    }
+</script>
+</body>
+</html>
