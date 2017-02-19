@@ -15,7 +15,7 @@
 <div class="container">
     <header>
         <section id="headright">
-            <a href="#" id="profileName">Shlomi Ezra</a>
+            <a href="#" id="profileName">Yossi Tsaraf</a>
             <a href="#" id="profilePic"><img src="images/users/yossit.png"></a>
         </section>
         <a href="index.html" id="logo"></a>
@@ -24,26 +24,26 @@
     <main id="success">
         <article>
             <section>
-                <h1><span id="sectitle">WELL DONE!</span><br>YOU HAVE EDITED YOSSI'S GUITAR!</h1>
+                <h1><span id="sectitle">WELL DONE!</span><br>YOU HAVE CREATED YOUR GUITAR!</h1>
                 <section id="guitar_pic">
                 </section>
                 <div class="desc">
-                    <h3></h3>
-                    <a href="explore.php">
-                        <button>EXPLORE</button>
+                    <h3>TOTAL: $1752</h3>
+                    <a href="myguitars.php">
+                        <button>ORDER NOW</button>
                     </a>
-                    <a href="mailto: yossit@toshare.com&subject=Wylde - YOUR GUITAR IS BETTER!&body=Hey i just updated your guitar specs! check it out!">
-                        <button id="second_button">NOTIFY USER</button>
+                    <a href="myguitars.php">
+                        <button id="second_button">YOUR GUITARS</button>
                     </a>
                 </div>
             </section>
+
         </article>
     </main>
 </div>
 <script>
     $("#guitar_pic").css("background", "url(" + sessionStorage.getItem("src") + ")");
-    $(".desc h3").text("TOTAL: " + sessionStorage.getItem("total"));
-</script>
+    console.log(sessionStorage.getItem("src"));</script>
 <footer>
     <div class="container">
         <a href="#"><span>CONTACT US</span></a>
